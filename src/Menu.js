@@ -87,7 +87,8 @@ class MuiVirtualList extends Component {
       <VirtualList
         width={width}
         {...downshiftProps.highlightedIndex != null && { scrollToIndex: downshiftProps.highlightedIndex }}
-        height={height}
+        height='400'
+        //autoHeight={true}
         rowCount={getRowCount(items, includeFooter)}
         rowHeight={rowHeight}
         rowRenderer={({ index, style, parent, key }) => {
@@ -186,7 +187,10 @@ function Menu({ getInfiniteLoaderProps, inputRef, ...props }) {
             flip: {
               enabled: false,
             },
-            preventOverflow: { enabled: false },
+            preventOverflow: {
+              enabled: true,
+              boundariesElement: 'scrollParent',
+            },
             hide: { enabled: false },
           }}
         >
