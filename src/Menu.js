@@ -183,6 +183,9 @@ function Menu({ getInfiniteLoaderProps, inputRef, ...props }) {
           placement="bottom-start"
           style={{ zIndex: zIndex.modal }}
           modifiers={{
+            flip: {
+              enabled: false,
+            },
             preventOverflow: { enabled: false },
             hide: { enabled: false },
           }}
