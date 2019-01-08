@@ -144,7 +144,7 @@ var MuiVirtualList = function (_Component) {
       return _react2.default.createElement(_reactVirtualized.List, _extends({
         width: width
       }, downshiftProps.highlightedIndex != null && { scrollToIndex: downshiftProps.highlightedIndex }, {
-        height: '400'
+        height: height
         //autoHeight={true}
         , rowCount: getRowCount(items, includeFooter),
         rowHeight: rowHeight,
