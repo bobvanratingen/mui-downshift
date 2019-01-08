@@ -87,7 +87,7 @@ class MuiVirtualList extends Component {
       <VirtualList
         width={width}
         {...downshiftProps.highlightedIndex != null && { scrollToIndex: downshiftProps.highlightedIndex }}
-        height='400'
+        height={height}
         //autoHeight={true}
         rowCount={getRowCount(items, includeFooter)}
         rowHeight={rowHeight}
